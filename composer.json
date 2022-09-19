@@ -1,7 +1,11 @@
 {
     "name": "laravel/jetstream",
     "description": "Tailwind scaffolding for the Laravel framework.",
-    "keywords": ["laravel", "tailwind", "auth"],
+    "keywords": [
+        "laravel",
+        "tailwind",
+        "auth"
+    ],
     "license": "MIT",
     "support": {
         "issues": "https://github.com/laravel/jetstream/issues",
@@ -19,7 +23,7 @@
         "illuminate/console": "^9.21",
         "illuminate/support": "^9.21",
         "jenssegers/agent": "^2.6",
-        "laravel/fortify": "^1.13.3"
+        "laravel/fortify": "dev-dev-master"
     },
     "require-dev": {
         "inertiajs/inertia-laravel": "^0.6.3",
@@ -43,6 +47,12 @@
             "Database\\Factories\\": "database/factories/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hdptrd/fortify"
+        }
+    ],
     "extra": {
         "branch-alias": {
             "dev-master": "2.x-dev"
